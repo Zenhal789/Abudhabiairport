@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Dhabi International Airport</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="/remixicon/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+<body>
+    <!---------------------------------------------Navbar1---------------------------------------------------------------------------->
+    <header>
+        <div class="navbar1">
+            <div class="leftsection">
+                <ul class="rightpart">
+                    <li><a href="" class="l-sec">Passengers</a></li>
+                    <li><a href="" class="l-sec">Corporate</a></li>
+                </ul>
+            </div>
+            <div class="rightsection">
+                <ul class="leftpart">
+                    <li>
+                        <div id="current-date-time">
+                            <span id="current-day"></span>
+                            <span id="current-date"></span>
+                            <span id="current-time"></span>
+                      </div>
+                      </li>
+                      <li><a href="" class="r-sec">Lost & Found</a></li>
+                      <li><a href="" class="r-sec">Feedback</a></li>
+                      <li><a href="" class="r-sec">Contact</a></li>
+                      <li><a href="" class="r-sec">عربي</a></li>
+                      <li><a href="" class="r-sec"><i class="ri-search-line"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+    <!---------------------------------------------Navbar2---------------------------------------------------------------------------->
+    <div class="navbar2">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/images/Logo-main-color.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="ri-menu-line"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#">Flight Status</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#">Passenger Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#">Transport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="">Services & Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#">Shop,Dine & Unwind</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-link" href="#">Experience Abu Dhabi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+<!-- ---------------------------------------------------Navbar mobile view--------------------------------------------------------------- -->
+<div class="navbar3">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <button class="btn-nav"><i class="bi bi-three-dots-vertical"></i></button>
+          <a class="navbar-brand" href="#"><img src="/images/Logo-main-color.svg"></a>
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon"><i class="ri-menu-line"></i></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="navmob">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="nav-link">Flight Status</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="nav-link">Passenger Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-link">Transport</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-link">Services & Facilities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-link">Shop,Dine & Unwind</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="nav-link">Experience Abu Dhabi</a>
+                  </li>
+              </ul>
+              <form class="searchbox" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search By Keyword" aria-label="Search" >
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+    </header>
+    <!-----------------------------------------------------Carousel-------------------------------------------------------------------->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="image-crop">
+              <img src="https://www.abudhabiairport.ae/-/media/adac_passengers/data/media/img/innovation-img/redefining-travel-en.ashx?h=940&iar=0&w=1920&hash=553AD47031968E89208FE97B73D66F18" class="d-block w-100" id="img">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- -------------------------------------------------Side Buttons ----------------------------------------------------------- -->
+      <div class="sideicons">
+        <div class="sun">
+            <a href="" class="climate"><i class="bi bi-brightness-high" id="sun"></i></a>
+            <div class="info" id="sun-info"><span class="weather">Clear Sky 34°C</span></div>
+        </div>
+        <div class="flight">
+            <a href=""><i class="bi bi-airplane" id="flight"></i></a>
+            <div class="info1" id="sun-info1"><span class="weather">Flight Status</span></div>
+        </div>
+        <div class="location">
+            <a href=""><i class="bi bi-geo-alt" id="location"></i></a>
+            <div class="info2" id="sun-info2"><span class="airport">Get To the Airport</span></div>
+        </div>
+        <div class="geo">
+            <a href=""><i class="bi bi-crosshair" id="geo"></i></a>
+            <div class="info3" id="sun-info3"><span class="explore">Explore Abu Dhabi</span></div>
+
+        </div>
+      </div>
+      <!-- -------------------------------------------Flights------------------------------------------------------- -->
+      <div id="flightchecker">
+        <div class="buttons">
+        <button><i class="ri-flight-land-line"></i>Arrival</button>
+        <div>
+            <button class="dep"><i class="ri-flight-takeoff-line"></i>Departure</button>
+        </div>
+        </div>
+        <div class="radiobutton">
+            <input type="radio" name="Yesterday" id="">Yesterday
+            <input type="radio" name="Today" id="">Today
+            <input type="radio" name="Tomorrow" id="">Tomorrow
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search by Flight number,origin or airline..." id="search">
+        </div>
+        <div class="view">
+            <a href="" class="view">View all Arrival Flights</a>
+        </div>
+      </div>
+<br>
+
+<!-----------------------------------------------------------Passenger section mobile------------------------------------------------------->
+<div class="passenger-sectionmob">
+  <h1 id="passenger1">What type of passenger are you?</h1><br>
+  <div class="button-passengers1">
+    <button class="btn1"id="btn1"><i class="bi bi-airplane-fill"></i>&nbsp;Transit 
+      <span class="arrow-down"><i class="bi bi-chevron-down"></i></span></button>
+  </div>
+  <div class="button-passengers2">
+    <button class="btn1" id="btn2"><i class="ri-flight-land-line"></i>&nbsp;Arrival
+      <span class="arrow-down"><i class="bi bi-chevron-down"></i></span></button>
+  </div> 
+  <div class="button-passengers3">
+    <button class="btn1"id="btn3"><i class="ri-flight-takeoff-line"></i>&nbsp;Departure
+    <span class="arrow-down"><i class="bi bi-chevron-down"></i></span></button>
+  </div> 
+  <div class="button-passengers4">
+    <button class="btn1"id="btn4"><i class="ri-shake-hands-fill"></i>&nbsp;Meet & Greet <span class="arrow-down"><i class="bi bi-chevron-down"></i></span></button>
+  </div>
+</div>
+<!-- ------------------------------------------------Passenger section------------------------------------------------------- -->
+<div class="passenger-section">
+<div id="passenger">
+  <h1 id="passenger">What type of passenger are you?</h1><br>
+</div>
+<div class="button-passengers">
+  <button><i class="bi bi-airplane-fill"></i>&nbsp;Transit</button>
+  <button><i class="ri-flight-land-line"></i>&nbsp;Arrival</button>
+  <button><i class="ri-flight-takeoff-line"></i>&nbsp;Departure</button>
+  <button><i class="ri-shake-hands-fill"></i>&nbsp;Meet & Greet</button>
+</div>
+<div id="img-banner">
+<img src="./images/mtb-opening-scaled.jpg" alt="" class="img-banner" style="height: 600px;">
+<div class="img-contents">
+<div class="img1-contents">
+  <i class="bi bi-wifi" id="logo"></i>
+  <h3><span class="stay">Stay</span> <br> Connected</h3><br>
+  <input type="button" value="know more" class="btn1">
+</div>
+<div class="img2-contents">
+  <i class="bi bi-stopwatch" id="logo"></i>
+  <h3>Fast-track <br><span class="services">Services</span></h3><br>
+  <input type="button" value="know more" class="btn1">
+</div>
+<div class="img3-contents">
+  <i class="bi bi-currency-exchange" id="logo"></i>
+  <h3 class="currency">Currency <br> <span>Exchange</span> </h3><br>
+  <input type="button" value="know more" class="btn1">
+</div>
+<div class="img4-contents">
+  <i class="bi bi-car-front" id="logo"></i>
+  <h3>Transport <br> <span class="services">Services</span></h3><br>
+  <input type="button" value="know more" class="btn1">
+</div>
+</div>
+<div id="transit">
+<div class="transit">
+  <h3 class="view-trans">View popular Questions among transit passengers <span class="add"><i class="ri-add-circle-fill"></i></span></h3>
+</div>
+</div>
+</div>
+</div>
+<!-- -----------------------------------------------explore----------------------------------------------- -->
+<div class="explore">
+  <h3 id="passenger">Explore new ways to spend your time</h3>
+  <p class="recommend">Some of our top recommendations</p>
+  <div class="explorations">
+    <div class="explore1">
+      <div class="dine">
+        <i class="bi bi-cake" id="cake"><p id="dine">&nbsp;Dine</p><a href="" class="viewall">View all</a></i>
+      </div>
+      <img src="https://live.staticflickr.com/65535/53274294505_3da0f6116d_n.jpg" class="photo">
+      <div class="burgerking">
+        <hr>
+      </div>
+    </div>
+    <div class="explore2">
+      <div class="shop">
+        <i class="bi bi-bag" id="cake"><p id="dine">&nbsp;Shop</p><a href="" class="viewall">View all</a></i>
+        <img src="https://live.staticflickr.com/65535/53274267703_9cf9512a23_n.jpg" class="photo">
+     <div class="burgerking">
+    </div>
+      </div>
+    </div>
+    <div class="explore3">
+      <div class="wind">
+        <i class="bi bi-flower2" id="cake"><p id="dine">&nbsp;Unwind</p><a href="" class="viewall">View all</a></i>
+        <img src="https://live.staticflickr.com/65535/53274461445_62bc0ced2f_n.jpg" class="photo">
+     <div class="burgerking">
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -----------------------------------------------------------explore mobile ----------------------------------------------------- -->
+<div class="explore-mob"><br>
+  <h3 class="exp">Explore new ways to spend your time</h3>
+  <p class="exp1">Some of our top recommendations</p>
+  <div class="img-container">
+  <div class="image-dine">
+    <img src="https://live.staticflickr.com/65535/53274294505_3da0f6116d_n.jpg" class="dineimg">
+    <div class="content1">
+      <i class="bi bi-cake" id="cakemob"></i>
+      <h1 align="center">Dine</h1>
+      <p class="dineoptions">Take your pick of International Dining Options</p>
+    </div>
+  </div>
+  <div class="image2"><br>
+    <img src="https://live.staticflickr.com/65535/53274267703_9cf9512a23_n.jpg" class="dineimg">
+    <div class="content1">
+      <i class="bi bi-bag" id="cakemob"></i>
+      <h1 align="center" id="shop">Shop</h1>
+      <p>A Shoppers Paradise - explore our Duty-Free Stores</p>
+    </div>
+  </div>
+  <div class="image3"><br>
+    <img src="https://live.staticflickr.com/65535/53274461445_62bc0ced2f_n.jpg" class="dineimg">
+    <div class="content3">
+      <i class="bi bi-flower2" id="cakemob"></i>
+      <h1 id="unwind">Unwind</h1>
+      <p class="exp2">Enjoy the premium Airport Experience</p>
+    </div>
+  </div>
+</div>
+</div><br><br>
+<!------------------------------------------------------------Explore New Ways---------------------------------------------------->
+<div class="explorenew">
+  <h3 id="passenger">Explore new ways to spend your time</h3>
+  <h3 class="exp">Explore new ways to spend your time</h3>
+  <p class="recommend">Some of our top recommendations</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/lounge.png" class="card-img-top photo">
+          <div class="card-body">
+            <h3 class="card-title">Airport Lounge</h3>
+            <input type="button" value="Know more" id="button2">
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/fam.png" class="card-img-top photo">
+          <div class="card-body">
+            <h3 class="card-title">Family Services</h3>
+            <input type="button" value="Know more" id="button2">
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/prayer.png" class="card-img-top photo" style="height: 271px;">
+          <div class="card-body">
+            <h3 class="card-title">Prayer Room</h3>
+            <input type="button" value="Know more" id="button2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------Experience Abu dhabi---------------------------------------------------------- -->
+<br><br>
+<div class="experienceabudhabi">
+  <h3 id="passenger">How do you want to #ExperienceAbuDhabi?</h3><br>
+  <h3 class="exp">How do you want to #ExperienceAbuDhabi?</h3><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="/images/inside.png" class="card-img-top photo">
+          <div class="card-body">
+            <h3 class="card-title">Inside the Airport</h3>
+            <p>You won’t run out of things to do if you have a wait between flights at Abu Dhabi International Airport.</p>
+            <input type="button" value="Know more" id="button2">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="images/in.png" class="card-img-top photo">
+          <div class="card-body">
+            <h3 class="card-title">Exploring the City</h3>
+            <p>Explore more about what to see & do, where to stay & eat, and what’s new in Abu Dhabi</p>
+            <input type="button" value="Know more" id="button2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------------------------------------------Experience city------------------------------------------------------------ -->
+<br><br>
+<h3 id="passenger">Experience Abu Dhabi City</h3>
+<h3 class="exp">Experience Abu Dhabi City</h3>
+
+
+<div class="container text-center my-3">
+  <div class="row mx-auto my-auto">
+      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner w-100" role="listbox">
+              <div class="carousel-item active">
+                  <div class="col-md-3">
+                      <div class="card card-body" id="cd2">
+                          <img class="img-fluid photo" src="/images/exp.png"><br>
+                          <h6>Experience Abu Dhabi</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card card-body"id="cd2">
+                          <img class="img-fluid photo" src="images/cityguide.png"><br>
+                          <h6>City Guide</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card card-body"id="cd2">
+                          <img class="img-fluid photo" src="/images/fam2.png"><br>
+                          <h6>Family Services</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card card-body" id="cd1">
+                          <img class="img-fluid photo" src="/images/shopper.png"><br>
+                          <h6 class="shopper">A shopper's paradise- Explore our Duty-Free Shops</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card card-body"id="cd2">
+                          <img class="img-fluid photo" src="/images/hotel.png"><br>
+                          <h6>Hotels and Accomodation</h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </div>
+</div><br><br>
+<!-- ------------------------------------------------Javascript for Card Carousel------------------------------------------------------ -->
+<script>
+   $('#recipeCarousel').carousel({
+    interval: 10000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+</script>
+<!----------------------------------------------------------Card Carousel 2------------------------------------------------------------ -->
+<div class="dutyfree"><br>
+  <h3 id="passenger">Shop at our Duty Free now</h3>
+  <h3 class="exp">Shop at our Duty Free now</h3>
+
+  <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://in.loccitane.com/cdn/shop/files/Artboard_3_6996bb6b-652a-4bd0-9edf-d60d0d4e869d_600x600_crop_center.png?v=1697447067"><br>
+                    <h6>L'Occitane</h6>
+                    <p>AED 128.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://static.thcdn.com/images/large/original/productimg/0/600/600/57/10552757-1344876207-96058.jpg"><br>
+                      <h6>Clarins</h6>
+                      <p>AED 139.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://isteam.wsimg.com/ip/0a3e7fb1-106a-11e5-9066-14feb5da1938/ols/343_original/:/rs=w:600,h:600"><br>
+                      <h6>Lindt</h6>
+                      <p>AED 60.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/71ELUBuURXL._AC_UL600_SR600,600_.jpg"><br>
+                      <h6>Toblerone</h6>
+                      <p>AED 59.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/51Q7FaPNysL._AC_UL600_SR600,600_.jpg"><br>
+                      <h6>Emporio Armani</h6>
+                      <p>AED 1282.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/51QaDrqtllL._AC_UL600_SR600,600_.jpg"><br>
+                    <h6>Daniel Wellington</h6>
+                    <p>AED 1069.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1605286513/Croma%20Assets/Miscellanous/Travel%20Accessories/Images/8993362411550.png?tr=w-600"><br>
+                    <h6>Travel Blue</h6>
+                    <p>AED 120</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div><br><br>
+<!-- ------------------------------------------------Card carousel2 jquery code----------------------------------------------------- -->
+<script>
+    $('.carousel .carousel-item').each(function () {
+    var minPerSlide = 4;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
+
+</script>
+<!-- --------------------------------------------------Newsletter section------------------------------------------------------------ -->
+<div class="newsletter">
+  <div class="section">
+<div class="subscribe">
+  <h6 id="news">Subscribe to <br> our newsletter!</h6>
+  <br><h6 id="news12">Subscribe to  our newsletter!</h6>
+</div>
+<div class="alerts">
+  <p class="offers">To receive special offers & <br>airport news by email!</p>
+  <p class="offers1">To receive special offers & airport news by email!</p>
+</div>
+<div class="email">
+  <input type="text" placeholder="&nbsp; Email address" id="text">
+  <input type="button" value="Subscribe" id="btn-txt">
+</div>
+<div class="icons">
+  <i class="ri-facebook-fill"></i>
+  <i class="ri-instagram-fill"></i>
+  <i class="ri-twitter-fill"></i>
+  <i class="ri-youtube-fill"></i>
+</div>
+</div>
+</div>
+<!-- ---------------------------------------------------------About section----------------------------------------------------------- -->
+<div class="about-section">
+<div class="about">
+  <div class="aboutimg">
+    <img src="https://1000logos.net/wp-content/uploads/2020/04/Etihad-Airways-Logo.png" width="220px">
+  </div>
+  <div class="text-contents">
+    <ul>
+      <li><a href="">About</a></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">Media Centre</a></li>
+      <li><a href="">FAQ</a></li>
+      <li><a href="">Blog</a></li>
+    </ul>
+  </div>
+  <div class="btncontact">
+    <input type="button" value="Contact us" class="btn7">
+  </div>
+</div>
+<div class="line-hr">
+  <hr width="90%" color="#fff" size="10px" class="line">
+</div>
+
+<div class="lastpart">
+  <div class="menu">
+    <ul>
+      <li><a href="">Sitemap</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Terms of use</a></li>
+      <li><a href="">MidField Terminal</a></li>
+    </ul>
+  </div><br>
+  <div class="airportname">
+    <p class="name">© Abu Dhabi International Airport 2022</p>
+    <p class="name1">© Abu Dhabi International Airport 2022</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
